@@ -1,0 +1,50 @@
+ID: 1
+Title: Room can be booked with valid data
+Preconditions:
+- User is on the homepage
+- The selected dates are available
+Test Steps:
+1. Open the home page
+2. Set "Check In" date to 28/06/2025
+3. Set "Check Out" date to 30/06/2025
+4. Click the "Check Availability" button
+5. Select the first available room
+6. Click "Do Reservation"
+7. Fill in guest details: John, Doe, johndoe@gmail.com, +1234567890
+8. Click the "Reserve" button
+Expected Result:
+- User sees confirmation message "Booking confirmed"
+
+---
+
+ID: 2
+Title: Room can’t be booked with invalid data
+Preconditions:
+- User is on the homepage
+- Check-out date is earlier than check-in
+Test Steps:
+1. Open the home page
+2. Set "Check In" date to 28/06/2025
+3. Set "Check Out" date to 30/03/2025 (invalid)
+4. Click the "Check Availability" button
+5. Select the first room shown
+6. Click "Do Reservation"
+7. Fill in guest details
+8. Click the "Reserve" button
+Expected Result:
+- User sees error message such as "Application error" or form validation warning
+
+---
+
+ID: 3
+Title: Earlier booked dates show as Unavailable
+Preconditions:
+- A booking already exists from 28/06/2025 to 30/06/2025
+Test Steps:
+1. Open the home page
+2. Attempt to book again with the same dates
+3. Click the "Check Availability" button
+4. Observe the calendar or booking UI
+Expected Result:
+- Dates 28/06/2025 to 30/06/2025 are marked as "Unavailable" or disabled
+- User is not allowed to select those dates again

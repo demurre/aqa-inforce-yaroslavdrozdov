@@ -1,0 +1,21 @@
+{
+  "name": "cypress-aqa-test-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open",
+    "test:headless": "cypress run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.12.1",
+  "devDependencies": {
+    "cypress": "^14.5.0",
+    "prettier": "3.6.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.0"
+  }
+}
