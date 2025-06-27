@@ -1,4 +1,3 @@
-// cypress/e2e/admin_api.cy.js
 import { BookingPage } from "../support/pages/booking.page";
 import { ReservationPage } from "../support/pages/reservation.page";
 import { RoomPage } from "../support/pages/room.page";
