@@ -3,7 +3,7 @@
 ## 1. Clone repository:
 
 ```bash
-git clone https://github.com/demurre/aqa-inforce-yaroslavdrozdov
+git clone https://github.com/demurre/aqa-inforce-yaroslavdrozdov.git
 ```
 
 ## 2. Open location:
@@ -18,7 +18,7 @@ cd aqa-inforce-yaroslavdrozdov
 pnpm i
 ```
 
-# For run test in cypress type:
+# For run test in cypress gui type:
 
 ```bash
 pnpm test
